@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="LenorsUI"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LenorsUI">
+				<Option output="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/LenorsUI.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/ToolChains/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/ToolChains/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/ToolChains/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/ToolChains/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/ToolChains/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/ToolChains/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 LenorsUI"/>
+					<CompileFile command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="LenorsUI/fast">
+				<Option output="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/LenorsUI.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/ToolChains/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="C:/ToolChains/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/ToolChains/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="C:/ToolChains/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="C:/ToolChains/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="C:/ToolChains/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 LenorsUI/fast"/>
+					<CompileFile command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/ToolChains/mingw64/bin/mingw32-make.exe -f &quot;C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/GLOBALINCLUDE.h">
+			<Option target="LenorsUI"/>
+		</Unit>
+		<Unit filename="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/PageManager.cpp">
+			<Option target="LenorsUI"/>
+		</Unit>
+		<Unit filename="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/PageManager.h">
+			<Option target="LenorsUI"/>
+		</Unit>
+		<Unit filename="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/UI.cpp">
+			<Option target="LenorsUI"/>
+		</Unit>
+		<Unit filename="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/UI.h">
+			<Option target="LenorsUI"/>
+		</Unit>
+		<Unit filename="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/hash.cpp">
+			<Option target="LenorsUI"/>
+		</Unit>
+		<Unit filename="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/hash.h">
+			<Option target="LenorsUI"/>
+		</Unit>
+		<Unit filename="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/main.cpp">
+			<Option target="LenorsUI"/>
+		</Unit>
+		<Unit filename="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/main.h">
+			<Option target="LenorsUI"/>
+		</Unit>
+		<Unit filename="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
