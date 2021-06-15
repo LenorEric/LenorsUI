@@ -26,7 +26,7 @@ public:
 
     static void delay(const int &time);
 
-    void lineAnimation(const string& text, ConsoleForegroundColor FC, ConsoleBackGroundColor BC);
+    void lineAnimation(string text, ConsoleForegroundColor FC, ConsoleBackGroundColor BC);
 
     void clear();
 

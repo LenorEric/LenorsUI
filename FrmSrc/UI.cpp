@@ -25,7 +25,7 @@ void UI::pos(int x, int y) {
     SetConsoleCursorPosition(hOut, posPoint);
 }
 
-void UI::lineAnimation(const string& text, ConsoleForegroundColor FC, ConsoleBackGroundColor BC) {
+void UI::lineAnimation(string text, ConsoleForegroundColor FC, ConsoleBackGroundColor BC) {
     this->textAnimation(this->posX, this->column + this->columns, text, FC, BC);
     this->columns++;
     this->textList.push_back(text);

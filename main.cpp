@@ -7,14 +7,47 @@ PageManager *Global_PM = nullptr;
 
 void printTestString1() {
     Global_UI->textAnimation(0, 0, "Hello? Would you stay with me for a while?", CFC_Green, CBC_Yellow);
-    Global_UI->delay(1000);
+    UI::delay(1000);
     Global_UI->textAnimation(0, 0, "                                             ", CFC_Black, CBC_Black);
 }
 
 void printTestString2() {
     Global_UI->textAnimation(0, 0, "I will show you my frame!", CFC_Green, CBC_Yellow);
-    Global_UI->delay(1000);
+    UI::delay(1000);
     Global_UI->textAnimation(0, 0, "                                       ", CFC_Black, CBC_Black);
+}
+
+inline void setPage(){
+    int currentPage;
+    currentPage = Global_PM->newPage();
+    Global_PM->addContent(currentPage, "Login", CFC_Green, CBC_Yellow);
+    Global_PM->addContent(currentPage, "Register", CFC_Green, CBC_Black);
+    Global_PM->addContent(currentPage, "Quit(Esc)", CFC_Gray, CBC_Black);
+    currentPage = Global_PM->newPage();
+    Global_PM->addContent(currentPage, "User1", CFC_Green, CBC_Yellow);
+    Global_PM->addContent(currentPage, "User2", CFC_Green, CBC_Black);
+    Global_PM->addContent(currentPage, "Return", CFC_Gray, CBC_Black);
+    currentPage = Global_PM->newPage();
+    Global_PM->addContent(currentPage, "User1", CFC_Green, CBC_Yellow);
+    Global_PM->addContent(currentPage, "User2", CFC_Green, CBC_Black);
+    Global_PM->addContent(currentPage, "User3", CFC_Green, CBC_Black);
+    Global_PM->addContent(currentPage, "Return", CFC_Gray, CBC_Black);
+}
+
+inline void setLinkPage(){
+    Global_PM->linkPage(0, 0, 1);
+    Global_PM->linkPage(0, 1, 2);
+    Global_PM->linkPage(0, 2, -1);
+    Global_PM->linkPage(1, 2, 0);
+    Global_PM->linkPage(2, 3, 0);
+}
+
+inline void setLinkFunc(){
+    Global_PM->linkFunc(1, 0, printTestString1);
+    Global_PM->linkFunc(1, 1, printTestString2);
+    Global_PM->linkFunc(2, 0, printTestString1);
+    Global_PM->linkFunc(2, 1, printTestString2);
+    Global_PM->linkFunc(2, 2, printTestString2);
 }
 
 int main() {
@@ -22,37 +55,15 @@ int main() {
     Global_UI = new UI(16, 16);
     SetConsoleTitle("Lenor's UI Presentation!");
     system("mode con cols=80 lines=40");
-    Global_UI->delay(500);
+    UI::delay(500);
     Global_UI->textAnimation(20, 17, "Welcome to Lenor's UI Presentation!", CFC_Yellow, CBC_Black);
-    Global_UI->delay(1000);
+    UI::delay(1000);
     Global_UI->clear();
     char key;
     int page = 0, pre_page = -1;
-
-    Global_PM->newPage();
-    Global_PM->addContent(0, "Login", CFC_Green, CBC_Yellow);
-    Global_PM->addContent(0, "Register", CFC_Green, CBC_Black);
-    Global_PM->addContent(0, "Quit(Esc)", CFC_Gray, CBC_Black);
-    Global_PM->newPage();
-    Global_PM->addContent(1, "User1", CFC_Green, CBC_Yellow);
-    Global_PM->addContent(1, "User2", CFC_Green, CBC_Black);
-    Global_PM->addContent(1, "Return", CFC_Gray, CBC_Black);
-    Global_PM->newPage();
-    Global_PM->addContent(2, "User1", CFC_Green, CBC_Yellow);
-    Global_PM->addContent(2, "User2", CFC_Green, CBC_Black);
-    Global_PM->addContent(2, "User3", CFC_Green, CBC_Black);
-    Global_PM->addContent(2, "Return", CFC_Gray, CBC_Black);
-    Global_PM->linkPage(0, 0, 1);
-    Global_PM->linkPage(0, 1, 2);
-    Global_PM->linkPage(0, 2, -1);
-    Global_PM->linkPage(1, 2, 0);
-    Global_PM->linkPage(2, 3, 0);
-    Global_PM->linkFunc(1, 0, printTestString1);
-    Global_PM->linkFunc(1, 1, printTestString2);
-    Global_PM->linkFunc(2, 0, printTestString1);
-    Global_PM->linkFunc(2, 1, printTestString2);
-    Global_PM->linkFunc(2, 2, printTestString2);
-
+    setPage();
+    setLinkPage();
+    setLinkFunc();
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "EndlessLoop"
     while (true) {
@@ -81,7 +92,6 @@ int main() {
         if (key == 27 || page == -1)
             break;
     }
-
 #pragma clang diagnostic pop
     return 0;
 }
