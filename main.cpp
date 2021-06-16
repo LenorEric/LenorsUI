@@ -5,55 +5,62 @@ using namespace std;
 UI *Global_UI = nullptr;
 PageManager *Global_PM = nullptr;
 
+namespace func {
 /// 样例函数1
-void printTestString1() {
-    Global_UI->textAnimation(0, 0, "Hello? Would you stay with me for a while?", CFC_Green, CBC_Yellow);
-    UI::delay(1000);
-    Global_UI->textAnimation(0, 0, "                                             ", CFC_Black, CBC_Black);
-}
+    void printTestString1() {
+        Global_UI->textAnimation(0, 0, "Hello? Would you stay with me for a while?", CFC_Green, CBC_Yellow);
+        UI::delay(1000);
+        Global_UI->textAnimation(0, 0, "                                             ", CFC_Black, CBC_Black);
+    }
 
 /// 样例函数2
-void printTestString2() {
-    Global_UI->textAnimation(0, 0, "I will show you my frame!", CFC_Green, CBC_Yellow);
-    UI::delay(1000);
-    Global_UI->textAnimation(0, 0, "                                       ", CFC_Black, CBC_Black);
+    void printTestString2() {
+        Global_UI->textAnimation(0, 0, "I will show you my frame!", CFC_Green, CBC_Yellow);
+        UI::delay(1000);
+        Global_UI->textAnimation(0, 0, "                                       ", CFC_Black, CBC_Black);
+    }
+
+    void printTestString3() {
+        Global_UI->textAnimation(0, 0, "Lenours!", CFC_Green, CBC_Yellow);
+        UI::delay(1000);
+        Global_UI->textAnimation(0, 0, "                                       ", CFC_Black, CBC_Black);
+    }
 }
 
-
+namespace init {
 /// 初始化页面信息，新建页面并添加内容
-inline void setPage(){
-    int currentPage;
-    currentPage = Global_PM->newPage();
-    Global_PM->addContent(currentPage, "Login", CFC_Green, CBC_Yellow);
-    Global_PM->addContent(currentPage, "Register", CFC_Green, CBC_Black);
-    Global_PM->addContent(currentPage, "Quit(Esc)", CFC_Gray, CBC_Black);
-    currentPage = Global_PM->newPage();
-    Global_PM->addContent(currentPage, "User1", CFC_Green, CBC_Yellow);
-    Global_PM->addContent(currentPage, "User2", CFC_Green, CBC_Black);
-    Global_PM->addContent(currentPage, "Return", CFC_Gray, CBC_Black);
-    currentPage = Global_PM->newPage();
-    Global_PM->addContent(currentPage, "User1", CFC_Green, CBC_Yellow);
-    Global_PM->addContent(currentPage, "User2", CFC_Green, CBC_Black);
-    Global_PM->addContent(currentPage, "User3", CFC_Green, CBC_Black);
-    Global_PM->addContent(currentPage, "Return", CFC_Gray, CBC_Black);
-}
+    inline void setPage() {
+        int currentPage;
+        currentPage = Global_PM->newPage();
+        Global_PM->addContent(currentPage, "Login", CFC_Green, CBC_Yellow);
+        Global_PM->addContent(currentPage, "Register", CFC_Green, CBC_Black);
+        Global_PM->addContent(currentPage, "Quit(Esc)", CFC_Gray, CBC_Black);
+        currentPage = Global_PM->newPage();
+        Global_PM->addContent(currentPage, "User1", CFC_Green, CBC_Yellow);
+        Global_PM->addContent(currentPage, "User2", CFC_Green, CBC_Black);
+        Global_PM->addContent(currentPage, "Return", CFC_Gray, CBC_Black);
+        currentPage = Global_PM->newPage();
+        Global_PM->addContent(currentPage, "User1", CFC_Green, CBC_Yellow);
+        Global_PM->addContent(currentPage, "User2", CFC_Green, CBC_Black);
+        Global_PM->addContent(currentPage, "Return", CFC_Gray, CBC_Black);
+    }
 
 /// 设置选项与页面之间的跳转关系
-inline void setLinkPage(){
-    Global_PM->linkPage(0, 0, 1);
-    Global_PM->linkPage(0, 1, 2);
-    Global_PM->linkPage(0, 2, -1);
-    Global_PM->linkPage(1, 2, 0);
-    Global_PM->linkPage(2, 3, 0);
-}
+    inline void setLinkPage() {
+        Global_PM->linkPage(0, 0, 1);
+        Global_PM->linkPage(0, 1, 2);
+        Global_PM->linkPage(0, 2, -1);
+        Global_PM->linkPage(1, 2, 0);
+        Global_PM->linkPage(2, 3, 0);
+    }
 
 /// 设置选项与函数的调用关系
-inline void setLinkFunc(){
-    Global_PM->linkFunc(1, 0, printTestString1);
-    Global_PM->linkFunc(1, 1, printTestString2);
-    Global_PM->linkFunc(2, 0, printTestString1);
-    Global_PM->linkFunc(2, 1, printTestString2);
-    Global_PM->linkFunc(2, 2, printTestString2);
+    inline void setLinkFunc() {
+        Global_PM->linkFunc(1, 0, func::printTestString1);
+        Global_PM->linkFunc(1, 1, func::printTestString2);
+        Global_PM->linkFunc(2, 0, func::printTestString1);
+        Global_PM->linkFunc(2, 1, func::printTestString3);
+    }
 }
 
 int main() {
@@ -69,9 +76,9 @@ int main() {
     Global_UI->clear();
     char key;
     int page = 0, pre_page = -1;
-    setPage();
-    setLinkPage();
-    setLinkFunc();
+    init::setPage();
+    init::setLinkPage();
+    init::setLinkFunc();
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "EndlessLoop"
     /// 开始页面检测

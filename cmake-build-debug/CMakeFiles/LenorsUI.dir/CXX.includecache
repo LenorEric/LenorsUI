@@ -28,7 +28,13 @@ map
 hash.h
 C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/hash.h
 
-C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/UI.cpp
+C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/PageManager.cpp
+PageManager.h
+C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/PageManager.h
+
+C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/PageManager.h
+GLOBALINCLUDE.h
+C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/GLOBALINCLUDE.h
 UI.h
 C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/UI.h
 
@@ -39,4 +45,12 @@ C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/GLOBALINCLUDE.h
 C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/hash.h
 cstdint
 -
+
+C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/main.cpp
+main.h
+C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/main.h
+
+C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/main.h
+PageManager.h
+C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/PageManager.h
 

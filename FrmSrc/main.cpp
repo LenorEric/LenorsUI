@@ -5,16 +5,18 @@ using namespace std;
 UI *Global_UI = nullptr;
 PageManager *Global_PM = nullptr;
 
-inline void setPage(){
-	/// set your page here
-}
+namespace init {
+    inline void setPage() {
+        /// set your page here
+    }
 
-inline void setLinkPage(){
-	/// link your page here
-}
+    inline void setLinkPage() {
+        /// link your page here
+    }
 
-inline void setLinkFunc(){
-    /// link your function here
+    inline void setLinkFunc() {
+        /// link your function here
+    }
 }
 
 int main() {
@@ -28,9 +30,9 @@ int main() {
     Global_UI->clear();
     char key;
     int page = 0, pre_page = -1;
-    setPage();
-    setLinkPage();
-    setLinkFunc();
+    init::setPage();
+    init::setLinkPage();
+    init::setLinkFunc();
 #pragma clang diagnostic push
 #pragma ide diagnostic ignored "EndlessLoop"
     while (true) {
