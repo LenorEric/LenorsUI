@@ -15,7 +15,7 @@ void UI::textAnimation(int x, int y, const string& text, ConsoleForegroundColor 
     pos(x, y);
     for (char i : text) {
         putchar(i);
-        delay(10);
+        delay(20);
     }
     SetConsoleTextAttribute(hOut, CFC_Black | CBC_Black);
 }
@@ -25,7 +25,7 @@ void UI::pos(int x, int y) {
     SetConsoleCursorPosition(hOut, posPoint);
 }
 
-void UI::lineAnimation(string text, ConsoleForegroundColor FC, ConsoleBackGroundColor BC) {
+void UI::lineAnimation(const string& text, ConsoleForegroundColor FC, ConsoleBackGroundColor BC) {
     this->textAnimation(this->posX, this->column + this->columns, text, FC, BC);
     this->columns++;
     this->textList.push_back(text);
@@ -55,7 +55,7 @@ void UI::highLight(int direction) {
 }
 
 void UI::changeColor(int col, ConsoleForegroundColor FC, ConsoleBackGroundColor BC) {
-    textAnimation(this->posX, col + this->column, textList[col], FC, BC);
+    textDisplay(this->posX, col + this->column, textList[col], FC, BC);
 }
 
 void UI::drawPage(pg curPage) {
@@ -65,4 +65,11 @@ void UI::drawPage(pg curPage) {
     }
 }
 
+void UI::textDisplay(int x, int y, const string &text, ConsoleForegroundColor FC, ConsoleBackGroundColor BC) {
+    SetConsoleTextAttribute(hOut, FC | BC);
+    pos(x, y);
+    for (char i : text)
+        putchar(i);
+    SetConsoleTextAttribute(hOut, CFC_Black | CBC_Black);
+}
 

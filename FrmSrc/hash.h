@@ -16,7 +16,7 @@ typedef unsigned __int64 uint64_t;
 #endif // !defined(_MSC_VER)
 
 //-----------------------------------------------------------------------------
-
+/// 计算哈希值，三个函数的区别在于返回值和位数不同
 void Hash_x86_32  (const void * key, int len, uint32_t seed, void * out );
 
 void Hash_x86_128 (const void * key, int len, uint32_t seed, void * out );

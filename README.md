@@ -2,6 +2,20 @@
 
 Lenor
 
+## 快速使用
+
+参考`FrmSrc`与使用例，在`FrmSrc`中的`main.cpp`文件中，
+
+`inline void setPage()`中添加新的页面和页面内容。
+
+`inline void setLinkPage()`中添加页面之间的链接。
+
+`inline void setLinkPage()`中添加选项与函数之间的链接。
+
+即可直接使用。
+
+页面链接与函数链接的思想类似于Qt的信号槽机制，如果无法理解，可以参考Qt信号槽。
+
 ## 用户接口函数
 
 ### PageManager`.h/cpp`
@@ -31,15 +45,3 @@ void changeColor(int col, ConsoleForegroundColor FC, ConsoleBackGroundColor BC);
 void textAnimation(int x, int y, const string &text, ConsoleForegroundColor FC, ConsoleBackGroundColor BC);
 在屏幕上(x,y)的位置显示一行文字，text为对应文字，FC与BC为内容的文字颜色和背景颜色。
 ```
-
-## 快速使用
-
-参考`FrmSrc`与使用例，在`FrmSrc`中的`main.cpp`文件中，
-
-`inline void setPage()`中添加新的页面和页面内容。
-
-`inline void setLinkPage()`中添加页面之间的链接。
-
-`inline void setLinkPage()`中添加选项与函数之间的链接。
-
-即可直接使用。
