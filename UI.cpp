@@ -17,7 +17,7 @@ void UI::textAnimation(int x, int y, const string& text, ConsoleForegroundColor 
         putchar(i);
         delay(20);
     }
-    SetConsoleTextAttribute(hOut, CFC_Black | CBC_Black);
+    SetConsoleTextAttribute(hOut, CFC_White | CBC_Black);
 }
 
 void UI::pos(int x, int y) {
@@ -70,6 +70,6 @@ void UI::textDisplay(int x, int y, const string &text, ConsoleForegroundColor FC
     pos(x, y);
     for (char i : text)
         putchar(i);
-    SetConsoleTextAttribute(hOut, CFC_Black | CBC_Black);
+    SetConsoleTextAttribute(hOut, CFC_White | CBC_Black);
 }
 

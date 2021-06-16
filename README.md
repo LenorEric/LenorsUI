@@ -44,4 +44,5 @@ void changeColor(int col, ConsoleForegroundColor FC, ConsoleBackGroundColor BC);
 更改第col行的颜色，FC与BC为内容的文字颜色和背景颜色。注意，仅使用lineAnimation绘制的文字可以调用此函数。
 void textAnimation(int x, int y, const string &text, ConsoleForegroundColor FC, ConsoleBackGroundColor BC);
 在屏幕上(x,y)的位置显示一行文字，text为对应文字，FC与BC为内容的文字颜色和背景颜色。
+冷知识：如果传入一个空字符串，那么就可以把光标设置到(x，y)位置，并且设置文字颜色和背景颜色。
 ```
