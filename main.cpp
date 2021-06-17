@@ -88,7 +88,7 @@ int main() {
             pre_page = page;
             Global_UI->drawPage(Global_PM->getPage(page));
         }
-        key = getch();
+        key = (char)getch();
         /// 检测是否有上下键的操作（72是上，80是下）
         switch (key) {
             case 72:

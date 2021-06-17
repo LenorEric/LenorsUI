@@ -5,6 +5,9 @@ using namespace std;
 UI *Global_UI = nullptr;
 PageManager *Global_PM = nullptr;
 
+namespace func{
+}
+
 namespace init {
     inline void setPage() {
         /// set your page here
@@ -40,7 +43,7 @@ int main() {
             pre_page = page;
             Global_UI->drawPage(Global_PM->getPage(page));
         }
-        key = getch();
+        key = (char)getch();
         switch (key) {
             case 72:
                 Global_UI->highLight(-1);

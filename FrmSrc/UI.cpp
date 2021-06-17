@@ -17,7 +17,7 @@ void UI::textAnimation(int x, int y, const string& text, ConsoleForegroundColor 
         putchar(i);
         delay(20);
     }
-    SetConsoleTextAttribute(hOut, CFC_White | CBC_Black);
+    SetConsoleTextAttribute(hOut, FC | BC);
 }
 
 void UI::pos(int x, int y) {
@@ -39,6 +39,7 @@ UI::UI(int column, int posX) :
         selectedColumns(0) {}
 
 void UI::clear() {
+    SetConsoleTextAttribute(hOut, CFC_Black | CBC_Black);
     system("cls");
     this->columns = 0;
     this->textList.clear();
@@ -70,6 +71,6 @@ void UI::textDisplay(int x, int y, const string &text, ConsoleForegroundColor FC
     pos(x, y);
     for (char i : text)
         putchar(i);
-    SetConsoleTextAttribute(hOut, CFC_White | CBC_Black);
+    SetConsoleTextAttribute(hOut, FC | BC);
 }
 
