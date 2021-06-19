@@ -176,33 +176,6 @@ UI.cpp.s:
 	$(MAKE) -f CMakeFiles\LenorsUI.dir\build.make CMakeFiles/LenorsUI.dir/UI.cpp.s
 .PHONY : UI.cpp.s
 
-hash.obj: hash.cpp.obj
-
-.PHONY : hash.obj
-
-# target to build an object file
-hash.cpp.obj:
-	$(MAKE) -f CMakeFiles\LenorsUI.dir\build.make CMakeFiles/LenorsUI.dir/hash.cpp.obj
-.PHONY : hash.cpp.obj
-
-hash.i: hash.cpp.i
-
-.PHONY : hash.i
-
-# target to preprocess a source file
-hash.cpp.i:
-	$(MAKE) -f CMakeFiles\LenorsUI.dir\build.make CMakeFiles/LenorsUI.dir/hash.cpp.i
-.PHONY : hash.cpp.i
-
-hash.s: hash.cpp.s
-
-.PHONY : hash.s
-
-# target to generate assembly for a file
-hash.cpp.s:
-	$(MAKE) -f CMakeFiles\LenorsUI.dir\build.make CMakeFiles/LenorsUI.dir/hash.cpp.s
-.PHONY : hash.cpp.s
-
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -245,9 +218,6 @@ help:
 	@echo ... UI.obj
 	@echo ... UI.i
 	@echo ... UI.s
-	@echo ... hash.obj
-	@echo ... hash.i
-	@echo ... hash.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

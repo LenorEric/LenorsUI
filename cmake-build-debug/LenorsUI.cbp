@@ -95,12 +95,6 @@
 		<Unit filename="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/UI.h">
 			<Option target="LenorsUI"/>
 		</Unit>
-		<Unit filename="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/hash.cpp">
-			<Option target="LenorsUI"/>
-		</Unit>
-		<Unit filename="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/hash.h">
-			<Option target="LenorsUI"/>
-		</Unit>
 		<Unit filename="C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/main.cpp">
 			<Option target="LenorsUI"/>
 		</Unit>

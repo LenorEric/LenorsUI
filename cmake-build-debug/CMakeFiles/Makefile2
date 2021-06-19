@@ -73,12 +73,12 @@ clean: CMakeFiles/LenorsUI.dir/clean
 CMakeFiles/LenorsUI.dir/all:
 	$(MAKE) -f CMakeFiles\LenorsUI.dir\build.make CMakeFiles/LenorsUI.dir/depend
 	$(MAKE) -f CMakeFiles\LenorsUI.dir\build.make CMakeFiles/LenorsUI.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Lenor\Desktop\DocBin\!Program\C\LenorsUI\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4,5 "Built target LenorsUI"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=C:\Users\Lenor\Desktop\DocBin\!Program\C\LenorsUI\cmake-build-debug\CMakeFiles --progress-num=1,2,3,4 "Built target LenorsUI"
 .PHONY : CMakeFiles/LenorsUI.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LenorsUI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lenor\Desktop\DocBin\!Program\C\LenorsUI\cmake-build-debug\CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lenor\Desktop\DocBin\!Program\C\LenorsUI\cmake-build-debug\CMakeFiles 4
 	$(MAKE) -f CMakeFiles\Makefile2 CMakeFiles/LenorsUI.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start C:\Users\Lenor\Desktop\DocBin\!Program\C\LenorsUI\cmake-build-debug\CMakeFiles 0
 .PHONY : CMakeFiles/LenorsUI.dir/rule

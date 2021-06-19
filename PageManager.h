@@ -24,7 +24,7 @@ public:
     int newPage();
 
     /// 向页面添加内容
-    void addContent(int pageNumber, string content, ConsoleForegroundColor FC, ConsoleBackGroundColor BC);
+    void addContent(int pageNumber, const string& content, ConsoleForegroundColor FC, ConsoleBackGroundColor BC);
 
     /// 链接一个选项和一个页面
     void linkPage(int tp, int column, int pageNumber);

@@ -15,7 +15,7 @@ int PageManager::newPage() {
     return this->currentPage++;
 }
 
-void PageManager::addContent(int pageNumber, string content, ConsoleForegroundColor FC, ConsoleBackGroundColor BC) {
+void PageManager::addContent(int pageNumber, const string& content, ConsoleForegroundColor FC, ConsoleBackGroundColor BC) {
     this->page[pageNumber].content.push_back(content);
     this->page[pageNumber].mapPage.push_back(pageNumber);
     this->page[pageNumber].fcc.push_back(FC);
@@ -49,18 +49,14 @@ int PageManager::getLink(int tp, int column) {
 }
 
 void PageManager::linkFunc(int tp, int column, PF func) {
-    int hash;
-    string feat = to_string(tp) + to_string(column);
-    Hash_x86_32(feat.c_str(), feat.length(), SEED, &hash);
+    int hash = (tp << 16) | column;
     this->execl.insert(pair<int, PF>(hash, func));
     this->linkPage(tp, column, -2);
 }
 
 void PageManager::execFunc(int tp, int column) {
     map<int, PF>::iterator iter;
-    int hash;
-    string feat = to_string(tp) + to_string(column);
-    Hash_x86_32(feat.c_str(), feat.length(), SEED, &hash);
+    int hash = (tp << 16) | column;
     iter = this->execl.find(hash);
     iter->second();
 }

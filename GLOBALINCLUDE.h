@@ -15,8 +15,6 @@
 #include <vector>
 #include <map>
 
-#include "hash.h"
-
 
 #define LENORDEBUG
 #define SEED 0x97c29b3a
