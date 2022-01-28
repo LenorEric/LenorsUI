@@ -44,7 +44,7 @@ enum ConsoleBackGroundColor {
     CBC_HighWhite = BACKGROUND_INTENSITY | BACKGROUND_RED | BACKGROUND_GREEN | BACKGROUND_BLUE,
     CBC_Black = 0,
 };
-struct pg{
+struct Pg{
     int treeNum;
     int currentCol = 0;
     vector<string> content;

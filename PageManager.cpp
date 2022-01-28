@@ -8,7 +8,7 @@ PageManager::PageManager(): currentPage(0) {
 }
 
 int PageManager::newPage() {
-    pg newPage;
+    Pg newPage;
     newPage.treeNum = currentPage;
     newPage.currentCol = 0;
     page.push_back(newPage);
@@ -22,7 +22,7 @@ void PageManager::addContent(int pageNumber, const string& content, ConsoleForeg
     this->page[pageNumber].bcc.push_back(BC);
 }
 
-pg PageManager::getPage(int pageNumber) {
+Pg PageManager::getPage(int pageNumber) {
     return this->page[pageNumber];
 }
 

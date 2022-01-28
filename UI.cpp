@@ -59,7 +59,7 @@ void UI::changeColor(int col, ConsoleForegroundColor FC, ConsoleBackGroundColor 
     textDisplay(this->posX, col + this->column, textList[col], FC, BC);
 }
 
-void UI::drawPage(pg curPage) {
+void UI::drawPage(Pg curPage) {
     this->clear();
     for (int i = 0; i < curPage.mapPage.size(); i++) {
         this->lineAnimation(curPage.content[i], curPage.fcc[i], curPage.bcc[i]);

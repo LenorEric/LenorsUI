@@ -1,44 +1,18 @@
-"C:\Program Files\JetBrains\CLion 2020.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_C_COMPILER=C:/ToolChains/arm-gcc/bin/arm-none-eabi-gcc.exe -DCMAKE_CXX_COMPILER=C:/ToolChains/arm-gcc/bin/arm-none-eabi-g++.exe -G "CodeBlocks - MinGW Makefiles" C:\Users\Lenor\Desktop\DocBin\!Program\C\LenorsUI
--- The C compiler identification is GNU 9.2.1
--- The CXX compiler identification is GNU 9.2.1
--- Check for working C compiler: C:/ToolChains/arm-gcc/bin/arm-none-eabi-gcc.exe
--- Check for working C compiler: C:/ToolChains/arm-gcc/bin/arm-none-eabi-gcc.exe -- broken
-CMake Error at C:/Program Files/JetBrains/CLion 2020.1/bin/cmake/win/share/cmake-3.16/Modules/CMakeTestCCompiler.cmake:60 (message):
-  The C compiler
-
-    "C:/ToolChains/arm-gcc/bin/arm-none-eabi-gcc.exe"
-
-  is not able to compile a simple test program.
-
-  It fails with the following output:
-
-    Change Dir: C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/CMakeFiles/CMakeTmp
-    
-    Run Build Command(s):C:/ToolChains/mingw64/bin/mingw32-make.exe cmTC_c9b1d/fast && C:/ToolChains/mingw64/bin/mingw32-make.exe -f CMakeFiles\cmTC_c9b1d.dir\build.make CMakeFiles/cmTC_c9b1d.dir/build
-    mingw32-make.exe[1]: Entering directory 'C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/CMakeFiles/CMakeTmp'
-    Building C object CMakeFiles/cmTC_c9b1d.dir/testCCompiler.c.obj
-    C:\ToolChains\arm-gcc\bin\arm-none-eabi-gcc.exe    -o CMakeFiles\cmTC_c9b1d.dir\testCCompiler.c.obj   -c C:\Users\Lenor\Desktop\DocBin\!Program\C\LenorsUI\cmake-build-debug\CMakeFiles\CMakeTmp\testCCompiler.c
-    Linking C executable cmTC_c9b1d.exe
-    "C:\Program Files\JetBrains\CLion 2020.1\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_c9b1d.dir\link.txt --verbose=1
-    "C:\Program Files\JetBrains\CLion 2020.1\bin\cmake\win\bin\cmake.exe" -E remove -f CMakeFiles\cmTC_c9b1d.dir/objects.a
-    C:\ToolChains\mingw64\bin\ar.exe cr CMakeFiles\cmTC_c9b1d.dir/objects.a @CMakeFiles\cmTC_c9b1d.dir\objects1.rsp
-    C:\ToolChains\arm-gcc\bin\arm-none-eabi-gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_c9b1d.dir/objects.a -Wl,--no-whole-archive  -o cmTC_c9b1d.exe -Wl,--out-implib,libcmTC_c9b1d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 
-    c:/toolchains/arm-gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/ld.exe: unrecognized option '--major-image-version'
-    c:/toolchains/arm-gcc/bin/../lib/gcc/arm-none-eabi/9.2.1/../../../../arm-none-eabi/bin/ld.exe: use the --help option for usage information
-    collect2.exe: error: ld returned 1 exit status
-    mingw32-make.exe[1]: *** [CMakeFiles\cmTC_c9b1d.dir\build.make:87: cmTC_c9b1d.exe] Error 1
-    mingw32-make.exe[1]: Leaving directory 'C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/CMakeFiles/CMakeTmp'
-    mingw32-make.exe: *** [Makefile:120: cmTC_c9b1d/fast] Error 2
-    
-    
-
-  
-
-  CMake will not be able to correctly generate this project.
-Call Stack (most recent call first):
-  CMakeLists.txt:2 (project)
-
-
--- Configuring incomplete, errors occurred!
-See also "C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/CMakeFiles/CMakeOutput.log".
-See also "C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug/CMakeFiles/CMakeError.log".
+"C:\Program Files\JetBrains\CLion 2020.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\Lenor\Desktop\DocBin\!Program\C\LenorsUI
+-- The C compiler identification is GNU 8.1.0
+-- The CXX compiler identification is GNU 8.1.0
+-- Check for working C compiler: C:/ToolChains/mingw64/bin/gcc.exe
+-- Check for working C compiler: C:/ToolChains/mingw64/bin/gcc.exe -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: C:/ToolChains/mingw64/bin/g++.exe
+-- Check for working CXX compiler: C:/ToolChains/mingw64/bin/g++.exe -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Lenor/Desktop/DocBin/!Program/C/LenorsUI/cmake-build-debug

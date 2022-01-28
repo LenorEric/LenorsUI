@@ -12,7 +12,7 @@ class PageManager {
 public:
 private:
     /// 页面列表
-    vector<pg> page;
+    vector<Pg> page;
     /// 函数调用关系
     map<int, PF> execl;
     /// 当前待写入的页面
@@ -34,7 +34,7 @@ public:
     /// 执行某一个函数
     void execFunc(int tp, int column);
     /// 返回某一个页面的信息（供绘制页面）
-    pg getPage(int pageNumber);
+    Pg getPage(int pageNumber);
     /// 获取页面文字内容(未使用)
     string getLineContent(int pageNumber);
     ///重置页面行计数器(未使用)

@@ -43,7 +43,7 @@ public:
     /// 在特定位置显示内容
     void textDisplay(int x, int y, const string &text, ConsoleForegroundColor FC, ConsoleBackGroundColor BC);
     /// 绘制一整个页面
-    void drawPage(pg curPage);
+    void drawPage(Pg curPage);
 };
 
 
